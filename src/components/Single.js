@@ -38,7 +38,13 @@ function Single() {
                     <h1>{heading}</h1>
                     <h3>{author}</h3>
                     <Art>
-                    <p>{txt}</p>
+                    `{txt.map((parag) => {
+                        return(
+                          <p>
+                            {parag}
+                          </p>
+                        );
+                      })}`
                     </Art>
                 </div>
             </Container>: 
@@ -113,11 +119,9 @@ const Art = styled.div`
     border: 3px solid;
     flex-basis:70%;
     p{
-        a{
-            color: #A9A9A9;
-            text-decoration: none;
-        }
-    }
+      text-align: left;
+      margin-left: 10px;
+  }
     @media (min-width: 1000px) {
         margin-top 0px;
     }

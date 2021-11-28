@@ -8,9 +8,7 @@ function Highlight() {
                 <img src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2021%2F1116%2Fr938111_1296x729_16%2D9.jpg&w=920&h=518&scale=crop&cquality=80&location=origin&format=jpg" />
             </HLImg>
             <Art>
-            <p>The <a href="/nba/team/_/name/lal/los-angeles-lakers">Los Angeles Lakers</a> got blitzed by the <a href="/nba/team/_/name/chi/chicago-bulls">Chicago Bulls</a> on Monday night, but the team continues to see promising signs from talented young wing <a href="https://www.espn.com/nba/player/_/id/4396991/talen-horton-tucker">Talen Horton-Tucker</a>. The third-year shooting guard scored 28 points on 19 shots and posted the best net rating of the team's starters in the loss to the Bulls.</p>
-            <p>With the Lakers in need of Horton-Tucker's scoring, defense, and playmaking, he played a team-high 37 minutes on Monday. A gifted playmaker who posted an awesome assist percentage of 20.8% last season -- which means he was assisting on a fifth of his teammates' field goals while on the court -- Horton-Tucker is likely to set career highs in minutes and statistics across the board this season.</p>
-            <p>Rostered in only 7.2% of ESPN leagues and yet due for a busy starting role for the Lakers, Horton-Tucker has been a key positive in an otherwise slow start to the season for Los Angeles.</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </Art>
         </Container>
     )

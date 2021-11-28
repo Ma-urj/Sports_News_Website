@@ -127,6 +127,9 @@ const Card = styled(Link)`
         transition-duration: 300ms;
     }
     cursor: pointer;
+    @media (max-width: 1150px){
+        flex-direction: column;
+    }
 `
 
 const CardContainer=styled.div`
@@ -137,6 +140,12 @@ const CardContainer=styled.div`
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     margin-top: 15px;
+    @media (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 450px){
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 const TextContainer=styled.div`
