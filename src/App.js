@@ -12,6 +12,10 @@ import Single from './components/Single';
 import Latest from './components/Latest';
 import Links from './components/Links';
 import Menu from './components/Menu';
+import Fixtures from './components/Fixtures';
+import FBFix from './components/FBFix';
+import ReDir from './components/ReDir';
+import InChoice from './components/InChoice';
 
 function App() {
   return (
@@ -23,11 +27,20 @@ function App() {
             <Route path="/latest">
               <Latest />
             </Route>
-            <Route path="/:sportname/:linkId">
+            <Route path="/redir">
+              <ReDir />
+            </Route>
+            <Route path="/:sportname/fixtures/:matchdate">
+              <FBFix />
+            </Route>
+            <Route path="/:sportname/articles/:linkId">
               <Single />
             </Route>
-            <Route path="/:sportname">
+            <Route path="/:sportname/articles">
               <Links />
+            </Route>
+            <Route path="/:sportname">
+              <InChoice />
             </Route>
             <Route path="/">
               <Home />

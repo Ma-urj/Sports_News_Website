@@ -15,7 +15,7 @@ function Single() {
     const {imgsrc} = location.state;
     useEffect(() => {
         async function fetchData() {
-            const req = await axios.get(`/${params.sportname}/${params.linkId}`);
+            const req = await axios.get(`/${params.sportname}/articles/${params.linkId}`);
 
             setHeading(req.data.heading);
             setText(req.data['text']);

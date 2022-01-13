@@ -11,11 +11,10 @@ function Links() {
 
     useEffect(() => {
         async function fetchData() {
-            const req = await axios.get(`/${params.sportname}`);
+            const req = await axios.get(`/${params.sportname}/articles`);
 
             setArticles(req.data);
             setLoading(true);
-            console.log(req.data.length);
         }
         
 
@@ -26,7 +25,7 @@ function Links() {
         <Container>
             {loading ? <div>
                 <Card to={{
-                    pathname : `/${params.sportname}/${Articles[0]['link']}`,
+                    pathname : `/${params.sportname}/articles/${Articles[0]['link']}`,
                     state : {
                         imgsrc: Articles[0]['imgsrc']
                     }
@@ -46,7 +45,7 @@ function Links() {
                         if(article!=Articles[0]){
                             return(
                                 <Card to={{
-                                    pathname:`/${params.sportname}/${article['link']}`,
+                                    pathname:`/${params.sportname}/articles/${article['link']}`,
                                     state: {
                                         imgsrc: article['imgsrc']
                                     }
@@ -110,7 +109,7 @@ const Container = styled.main`
 const Card = styled(Link)`
     text-decoration: none;
     color: white;
-    border: 3px solid;
+    border: 1px solid;
     padding: 10px;
     display: flex;
     justify-content: center;

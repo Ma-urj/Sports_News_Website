@@ -23,7 +23,7 @@ function ImgSlider() {
                 <h1>Basketball</h1>
             </Wrap>
             <Wrap to="/formula1">
-                <img src = '/images/example.jpg' />
+                <img src = '/images/formula1.jpg' />
                 <h1>Formula 1</h1>
             </Wrap>
             <Wrap to="/cricket">
@@ -31,8 +31,12 @@ function ImgSlider() {
                 <h1>Cricket</h1>
             </Wrap>
             <Wrap to="/football">
-                <img src = 'https://i.pinimg.com/originals/72/da/ce/72dace81ac8240fab2361394b28f4a57.jpg' />
+                <img src = '/images/football.jpg' />
                 <h1>Football</h1>
+            </Wrap>
+            <Wrap to="/rugby-union">
+                <img src = '/images/rugby.jpg' />
+                <h1>Rugby</h1>
             </Wrap>
         </Carousel>
     )

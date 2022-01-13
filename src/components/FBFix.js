@@ -1,21 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import Highlight from './Highlight'
-import ImgSlider from './ImgSlider'
-import NSLetter from './NSLetter'
+import DateC from './Date'
+import FixT from './FixT'
 
-function Home() {
+function FBFix() {
     return (
         <Container>
-            <ImgSlider />
-            <Highlight />
+            <Dates>
+                <DateC />
+                <FixT />
+            </Dates>
         </Container>
     )
 }
 
-export default Home
+export default FBFix
 
-const Container = styled.main`
+const Container = styled.div`
     min-height: calc(100vh - 70px);
     padding: 0 calc(3.5vw + 5px);
     position: relative;
@@ -31,4 +32,14 @@ const Container = styled.main`
         bottom: 0;
         z-index: -1;
     }
+    color: white;
+    overflow: hidden;
+    flex-direction: column;
+    @media (min-width: 1000px) {
+        flex-direction: row;
+    }
+`
+
+const Dates = styled.div`
+    padding: 20px;
 `

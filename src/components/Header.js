@@ -13,6 +13,7 @@ function Header() {
     async function closeTB(){
         setShowTB("none");
     }
+    
 
     return (
         <div>
@@ -28,16 +29,44 @@ function Header() {
                     <LinkTag to="/latest">
                         <h3>Latest</h3>
                     </LinkTag>
-                    <LinkTag to="/football">
+                    <LinkTag to={{
+                        pathname: `/redir`,
+                        state:{
+                            pname: `/football`
+                        }
+                        }}>
                         <h3>Football</h3>
                     </LinkTag>
-                    <LinkTag to="/basketball">
+                    <LinkTag to={{
+                        pathname: `/redir`,
+                        state:{
+                            pname: `/basketball`
+                        }
+                        }}>
                         <h3>Basketball</h3>
                     </LinkTag>
-                    <LinkTag to="/cricket">
+                    <LinkTag to={{
+                        pathname: `/redir`,
+                        state:{
+                            pname: `/cricket`
+                        }
+                        }}>
                         <h3>Cricket</h3>
                     </LinkTag>
-                    <LinkTag to="/formula1">
+                    <LinkTag to={{
+                        pathname: `/redir`,
+                        state:{
+                            pname: `/rugby-union`
+                        }
+                        }}>
+                        <h3>Rugby</h3>
+                    </LinkTag>
+                    <LinkTag to={{
+                        pathname: `/redir`,
+                        state:{
+                            pname: `/formula1`
+                        }
+                        }}>
                         <h3>Formula 1</h3>
                     </LinkTag>
                 </NavMenu>
